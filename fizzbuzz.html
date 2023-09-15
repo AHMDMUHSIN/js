@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="task" placeholder="enter the number">
+    <button id="btn">send</button>
+    <div id="list"></div>
+
+    <script>
+        x=document.querySelector("#task")
+        btn=document.querySelector("#btn")
+
+        btn.addEventListener("click",function(){
+            let val=parseInt(x.value)
+            let arr=[];
+            let s="";
+            for(i=1;i<=x.value;i++){
+                if(i%3==0 && i%5==0){
+                    arr.push("fizzbuzz")
+                }
+                else if(i%3==0){
+                    arr.push("fizz")
+                }
+                else if(i%5==0){
+                    arr.push("buzz")
+                }
+                else
+                {arr.push(i)}
+              
+               
+            }
+            arr.forEach(function(i){
+                s+=`<li>${i}</li>`
+            })
+            document.getElementById("list").innerHTML=s
+            
+        })
+    </script>
+</body>
+</html>

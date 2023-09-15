@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="one">
+  <input type="text" id="two">
+  <button id="btn">add</button>
+  <p id="sum"></p>
+
+  <script>
+    let a=document.getElementById("one");
+    let b=document.getElementById("two");
+    document.getElementById("btn").addEventListener("click",function(){
+      if(a.value=="" && b.value==""){
+        alert("please enter a number")
+      }
+      else{
+        
+        document.getElementById("sum").innerHTML=parseInt(a.value)+parseInt(b.value)
+
+      }
+     
+      
+      
+    })
+  </script>
+</body>
+</html>
+
+<!-- spankbank -->

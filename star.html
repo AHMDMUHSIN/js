@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="task" placeholder="enter number">
+    <button id="btn">get</button>
+    <div id="res"></div>
+    <script>
+        let x=document.querySelector("#task")
+        let btn=document.querySelector("#btn")
+
+        btn.addEventListener("click",function(){
+            let y=x.value;
+            let s="";
+            for(i=1;i<=y;i++){
+                for(j=1;j<=i;j++){
+                   s+="*"
+                }
+                s+=`<div><div>`
+            }
+            document.getElementById("res").innerHTML=s
+        })
+    </script>
+</body>
+</html>

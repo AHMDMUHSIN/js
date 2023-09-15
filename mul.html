@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="Enter the value for multiplication" id="task">
+    <button id="btn">Enter</button>
+    
+    <div id="list"></div>
+
+    <script>
+        let x=document.querySelector("#task");
+        let btn=document.querySelector("#btn");
+
+        btn.addEventListener("click",function(){
+            let val=parseInt(x.value)
+            let s="";
+            for(i=1;i<=10;i++)
+            {
+                s=s+"<div>"+i+"x"+val+"="+i*val+"</div>";
+            }
+            document.getElementById("list").innerHTML=s
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user1={name:"Messi   ",chem:97,math:95,net:96}
+        let user2={name:"Di maria",chem:90,math:85,net:86}
+        let user3={name:"Scaloni ",chem:87,math:75,net:76}
+        let user4={name:"De paul ",chem:67,math:75,net:56}
+        let user5={name:"Romero  ",chem:77,math:65,net:66}
+        let data=function(){
+               console.log(`name is ${this.name} total is ${this.chem+this.math+this.net}`);
+            }
+        
+        x=data;
+        x.call(user1)
+        x.call(user2)
+        
+
+    </script>
+</body>
+</html>
